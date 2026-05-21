@@ -20,13 +20,13 @@ structured data, thin factual density, no direct answer up top.
 **Claude Code:**
 
 ```bash
-npx skills add GrowthHunt/geo-skill
+npx skills add JoyyyceD/geo-skill
 ```
 
 Or clone it straight into your skills directory:
 
 ```bash
-git clone https://github.com/GrowthHunt/geo-skill ~/.claude/skills/geo-audit
+git clone https://github.com/JoyyyceD/geo-skill ~/.claude/skills/geo-audit
 ```
 
 ## Usage
