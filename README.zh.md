@@ -4,20 +4,20 @@
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-d97757?style=flat-square)](https://claude.com/claude-code)
 [![GEO](https://img.shields.io/badge/GEO-audit%20%2B%20fix-e84e1b?style=flat-square)](https://growthhunt.ai/geo)
 
-**审计任意网页对 AI 搜索引擎的可见度——然后在 Claude Code 里直接修复。**
+**审计任意网页对 AI 的可见度——然后在你的 AI 编辑器里直接修复。**
 
 [English](README.md) · **中文**
 
 ---
 
-AI 回答引擎——ChatGPT、Perplexity、Gemini、Claude——回答问题时会**引用来源**。
-如果你的页面没有为它们做好结构，你就是隐形的：
+AI 回答引擎回答问题时会**引用来源**。如果你的页面没有为它们做好结构，
+你就是隐形的：
 
 ```
 问   “给独立开发者用的最好的 AI 写作工具是什么？”
 
-Perplexity：“最值得考虑的是 Competitor A、Competitor B
-             和 Competitor C……”      ← 它们被引用了，你没有。
+AI 回答：”最值得考虑的是 Competitor A、Competitor B
+         和 Competitor C……”      ← 它们被引用了，你没有。
 ```
 
 这个技能会审计 AI 引擎能否**抓取、理解并引用**你的页面——然后把安全、确定性的
@@ -56,7 +56,7 @@ git clone https://github.com/JoyyyceD/geo-skill ~/.claude/skills/geo-audit
 
 技能会跑一套四步流程：
 
-1. **审计** — 通过免费的 GrowthHunt GEO API 给 URL 打 0–100 分。
+1. **审计** — 自己抓取页面、自己跑约 45 项检查打 0–100 分。无需 API key、无需账号。
 2. **诊断** — 识别你的框架，把每个问题对应到具体文件。
 3. **修复** — 应用「生成型」修复，改动前先给你看 diff。
 4. **验证** — 你重新部署后再跑一次审计，前后对比。
@@ -135,12 +135,17 @@ SEO 审计查的是排名信号——外链、关键词、Core Web Vitals。这�
 
 ### 免费吗？
 
-免费。技能和底层的审计 API 都免费，在 Claude Code 里想跑多少次都行。
+完全免费。想跑多少次都行。
 
-### 不用 Claude Code 能用吗？
+### 是自包含的吗？
 
-审计可以——在 [growthhunt.ai/geo](https://growthhunt.ai/geo) 免费跑。定位文件
-和修复这套流程需要 Claude Code。
+是的。技能自己抓取页面、自己跑全部约 45 项检查——无需 API key、无需账号，
+不向任何服务器发送数据。
+
+### 不用 AI 编辑器也能用吗？
+
+可以——[growthhunt.ai/geo](https://growthhunt.ai/geo) 有免费网页版，零配置
+快速跑一次审计。
 
 ## 相关链接
 

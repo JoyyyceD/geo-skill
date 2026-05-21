@@ -4,24 +4,24 @@
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-d97757?style=flat-square)](https://claude.com/claude-code)
 [![GEO](https://img.shields.io/badge/GEO-audit%20%2B%20fix-e84e1b?style=flat-square)](https://growthhunt.ai/geo)
 
-**Audit any web page for AI search visibility — then apply the fixes, right inside Claude Code.**
+**Audit any web page for AI visibility — then apply the fixes, right inside your AI editor.**
 
 **English** · [中文](README.zh.md)
 
 ---
 
-AI answer engines — ChatGPT, Perplexity, Gemini, Claude — answer questions by
-**citing sources**. If your pages aren't structured for them, you're invisible:
+AI answer engines answer questions by **citing sources**. If your pages aren't
+structured for them, you're invisible:
 
 ```
-Q   "What's the best AI writing tool for solo founders?"
+Q    "What's the best AI writing tool for solo founders?"
 
-Perplexity:  "The strongest options are Competitor A, Competitor B
-              and Competitor C…"      ← they get cited. You don't.
+AI   "The strongest options are Competitor A, Competitor B and
+      Competitor C…"          ← they get cited. You don't.
 ```
 
-This skill audits whether AI engines can **crawl, understand and cite** your
-page — then applies the safe, deterministic fixes in your codebase.
+This skill audits whether AI can **crawl, understand and cite** your page —
+then applies the safe, deterministic fixes in your codebase.
 
 ## What is GEO?
 
@@ -57,7 +57,7 @@ In Claude Code, just ask in plain language:
 
 The skill runs a four-step workflow:
 
-1. **Audit** — scores the URL 0–100 via the free GrowthHunt GEO API.
+1. **Audit** — fetches the page and scores it 0–100 itself, across ~45 checks. No API key, no account.
 2. **Diagnose** — detects your framework and maps each issue to a file.
 3. **Fix** — applies generation-type fixes with a diff you approve.
 4. **Verify** — re-runs the audit after you redeploy, and compares.
@@ -141,13 +141,17 @@ deploys, or commits.
 
 ### Is it free?
 
-Yes. The skill and the underlying audit API are free. Run it as often as you
-like from Claude Code.
+Yes — entirely. Run it as often as you like.
 
-### Does it work without Claude Code?
+### Is it self-contained?
 
-The audit does — run it free at [growthhunt.ai/geo](https://growthhunt.ai/geo).
-The file-locating and fixing workflow needs Claude Code.
+Yes. The skill fetches the page and runs all ~45 checks itself — no API key, no
+account, nothing sent to a server.
+
+### Is there a version without an AI editor?
+
+Yes — a free web version at [growthhunt.ai/geo](https://growthhunt.ai/geo) for a
+quick audit with no setup.
 
 ## Links
 
